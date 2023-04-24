@@ -22,4 +22,10 @@ InsertionSort insertionSort = new InsertionSort();
 insertionSort.Sort(insertion_sort_list);
 Console.WriteLine(helper.Print_results_of_sorting(insertionSort));
 
+Console.WriteLine("Now let's see how selection sort does!");
+List<int> selection_sort_list = new List<int>(original_list).ToList();
+SelectionSort selectionSort = new SelectionSort();
+selectionSort.Sort(selection_sort_list);
+Console.WriteLine(helper.Print_results_of_sorting(selectionSort));
+
 
