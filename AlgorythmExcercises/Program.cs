@@ -13,10 +13,11 @@ Console.WriteLine("Now, let's compare some sorting algorithms!");
 Console.WriteLine("First let's see how bubblesort does!");
 BubbleSort bubbleSort = new BubbleSort();
 bubbleSort.Sort(original_list);
-TimeSpan timeSpan = bubbleSort.RunTime.Elapsed;
-string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
-           timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds,
-           timeSpan.Milliseconds / 2);
+Console.WriteLine(helper.Print_results_of_sorting(bubbleSort));
 
-Console.WriteLine($"It took {bubbleSort.SwapCount} swaps and {elapsedTime} all together");
+Console.WriteLine("Now let's see how insertionsort does!");
+InsertionSort insertionSort = new InsertionSort();
+insertionSort.Sort(original_list);
+Console.WriteLine(helper.Print_results_of_sorting(insertionSort));
+
 

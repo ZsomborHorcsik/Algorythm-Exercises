@@ -2,9 +2,9 @@
 
 namespace AlgorythmExcercises.SortingAlgorythms
 {
-    public class Insertion_Sort : SortingAlgorythm
+    public class InsertionSort : SortingAlgorythm
     {
-        public Insertion_Sort() 
+        public InsertionSort() 
         {
             SwapCount = 0;
             RunTime = new Stopwatch();
