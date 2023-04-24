@@ -3,13 +3,9 @@ using System.Collections.Generic;
 
 namespace Helpers
 {
-    public class heleper
+    public static class helper
     {
-        public heleper()
-        {
-        }
-
-        public List<int> Generate_List_of_integers(int length)
+        public static List<int> Generate_List_of_integers(int length)
         {
             Random rand = new Random();
             List<int> result = new List<int>();
