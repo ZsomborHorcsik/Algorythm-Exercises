@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using AlgorythmExcercises.SortingAlgorythms;
 
 namespace Helpers
 {
@@ -16,7 +15,16 @@ namespace Helpers
             }
 
             return result;
+        }
 
+        public static string Print_results_of_sorting(SortingAlgorythm algorythm)
+        {
+            TimeSpan timeSpan = algorythm.RunTime.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                       timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds,
+                       timeSpan.Milliseconds / 2);
+
+            return $"It took {algorythm.SwapCount} swaps and {elapsedTime} all together";
         }
     }
 }
