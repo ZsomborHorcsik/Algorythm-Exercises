@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 
 
-namespace SortingAlgorythms
+namespace AlgorythmExcercises.SortingAlgorythms
 {
     public class BubbleSort : SortingAlgorythm
     {

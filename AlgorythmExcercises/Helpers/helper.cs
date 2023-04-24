@@ -5,7 +5,7 @@ namespace Helpers
 {
     public static class helper
     {
-        public static List<int> Generate_List_of_integers(double length)
+        public static List<int> Generate_list_of_integers(double length)
         {
             Random rand = new Random();
             List<int> result = new List<int>();

@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics;
 
 
-namespace SortingAlgorythms
+namespace AlgorythmExcercises.SortingAlgorythms
 {
 	public abstract class SortingAlgorythm
 	{
 		public int SwapCount;
 		public Stopwatch RunTime;
-	}
+    }
 }
