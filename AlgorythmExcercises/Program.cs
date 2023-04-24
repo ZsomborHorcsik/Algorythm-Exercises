@@ -10,14 +10,16 @@ List<int> original_list = helper.Generate_list_of_integers(list_length);
 Console.WriteLine($"You have chosen a list length of {list_length}.");
 Console.WriteLine("Now, let's compare some sorting algorithms!");
 
-Console.WriteLine("First let's see how bubblesort does!");
+Console.WriteLine("First let's see how bubble sort does!");
+List<int> bubble_sort_list = new List<int>(original_list).ToList();
 BubbleSort bubbleSort = new BubbleSort();
-bubbleSort.Sort(original_list);
+bubbleSort.Sort(bubble_sort_list);
 Console.WriteLine(helper.Print_results_of_sorting(bubbleSort));
 
-Console.WriteLine("Now let's see how insertionsort does!");
+Console.WriteLine("Now let's see how insertion sort does!");
+List<int> insertion_sort_list = new List<int>(original_list).ToList();
 InsertionSort insertionSort = new InsertionSort();
-insertionSort.Sort(original_list);
+insertionSort.Sort(insertion_sort_list);
 Console.WriteLine(helper.Print_results_of_sorting(insertionSort));
 
 
