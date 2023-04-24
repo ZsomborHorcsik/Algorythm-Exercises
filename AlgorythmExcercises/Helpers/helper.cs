@@ -24,7 +24,7 @@ namespace Helpers
                        timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds,
                        timeSpan.Milliseconds / 2);
 
-            return $"It took {algorythm.SwapCount} swaps and {elapsedTime} all together";
+            return $"It took {algorythm.SwapCount} swaps and {elapsedTime} all together \n \n";
         }
     }
 }
