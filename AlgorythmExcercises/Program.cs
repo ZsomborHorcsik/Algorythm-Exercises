@@ -8,12 +8,15 @@ int list_length = int.Parse(Console.ReadLine());
 List<int> original_list = helper.Generate_List_of_integers(list_length);
 
 Console.WriteLine($"You have chosen a list length of {list_length}.");
-Console.WriteLine($"Your original list looks like this {original_list}.");
 Console.WriteLine("Now, let's compare some sorting algorithms!");
 
 Console.WriteLine("First let's see how bubblesort does!");
 BubbleSort bubbleSort = new BubbleSort();
-List<int> sorted_list = bubbleSort.Sort(original_list);
-Console.WriteLine($"{sorted_list}");
-Console.WriteLine($"It took {bubbleSort.SwapCount} swaps and {bubbleSort.RunTime} all together");
+bubbleSort.Sort(original_list);
+TimeSpan timeSpan = bubbleSort.RunTime.Elapsed;
+string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+           timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds,
+           timeSpan.Milliseconds / 2);
+
+Console.WriteLine($"It took {bubbleSort.SwapCount} swaps and {elapsedTime} all together");
 
